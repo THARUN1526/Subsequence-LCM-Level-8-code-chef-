@@ -1,0 +1,45 @@
+Let's go through the code step by step:
+
+1. Importing Libraries:
+   - `import sys`: This library provides access to some variables used or maintained by the interpreter and to functions that interact with the interpreter.
+   - `import random`: This library provides functions for generating pseudo-random numbers.
+   - `from collections import defaultdict`: This library provides a specialized dictionary that automatically assigns a default value to any new key.
+
+2. Custom Classes:
+   - `DefaultDict`: This class is a custom implementation of a dictionary that assigns a default value to any new key.
+   - `Counter`: This class is a custom implementation of a dictionary that counts the occurrences of items.
+   - `Set`: This class is a custom implementation of a set.
+
+3. Helper Functions:
+   - `int1`: It subtracts 1 from the given integer.
+   - `pDB`: It prints the arguments to the standard error stream.
+   - `p2D`: It prints a 2D list with each sublist on a new line.
+   - `II`: It reads a single integer from the input.
+   - `LI`: It reads a list of integers from a single line of input.
+   - `LLI`: It reads a 2D list of integers.
+   - `LI1`: It reads a list of integers and subtracts 1 from each element.
+   - `LLI1`: It reads a 2D list of integers and subtracts 1 from each element.
+   - `SI`: It reads a string from the input.
+   - `dij`: It defines a list of coordinate directions.
+   - `inf`: It represents infinity.
+   - `md`: It represents a modulo value.
+   - `Sieve`: This class implements the Sieve of Eratosthenes algorithm for prime number generation.
+   - `nHr`: It calculates the number of ways to distribute identical items into distinct groups.
+   - `nPr`: It calculates the number of permutations of r items from a set of n items.
+   - `nCr`: It calculates the number of combinations of r items from a set of n items.
+
+4. Global Variables:
+   - `n_max`: It defines the maximum value for n used in factorials.
+   - `fac`: It precomputes the factorial values modulo md.
+   - `ifac`: It precomputes the inverse factorial values modulo md.
+   - `sv`: It creates an instance of the `Sieve` class for prime number generation.
+
+5. `solve()` Function:
+   - This function represents the main logic for solving the problem.
+   - It reads input values and performs calculations based on the problem statement.
+   - The calculated answer is then printed.
+
+6. Test Case Execution:
+   - The code reads the number of test cases (`testnumber`) using the `II()` function.
+   - It then iterates `testnumber` times, calling the `solve()` function for each test case.
+
