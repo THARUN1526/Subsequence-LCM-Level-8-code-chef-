@@ -1,0 +1,17 @@
+This problem requires finding the number of subsequences of length M in an array that satisfy a given condition. The condition states that for any pair of indices (i, j) in the subsequence S, the expression (lcm(M, Si) - Si) should be equal to (lcm(M, Sj) - Sj), where lcm(a, b) denotes the least common multiple of integers a and b.
+
+To solve this problem, you can follow these steps:
+
+1. Read the number of test cases, T.
+2. Iterate T times to process each test case.
+3. For each test case, read the length of the array, N.
+4. Read the elements of the array.
+5. Initialize a variable, count, to store the count of valid subsequences.
+6. Iterate over all possible subsequences of length M using nested loops. The outer loop iterates from 0 to N - M, and the inner loop iterates from the current outer loop index + 1 to N - 1.
+7. Check if the current subsequence satisfies the given condition. Calculate the expressions (lcm(M, Si) - Si) and (lcm(M, Sj) - Sj) for each pair of indices (i, j) in the subsequence.
+8. If the condition is satisfied for all pairs, increment the count by 1.
+9. After checking all subsequences, print the value of count modulo 10^9 + 7.
+
+The modulo operation is required to handle large numbers and prevent overflow, as stated in the problem. The modulo value 10^9 + 7 is a commonly used value in programming contests.
+
+Make sure to implement the steps correctly and handle the input and output format as described in the problem statement.
